@@ -46,23 +46,20 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            string name = nameOfPerson;
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(nameOfPerson))
             {
                return "Hello!";
             }
             else
-            return ($"Hello, {name}!");
+            {
+                return ($"Hello, {nameOfPerson}!");
+            }
+            
         }
 
         public string GetHey()
         {
-            string name = Console.ReadLine();
-            Console.WriteLine("Hey!,{name}");
-            return name;
-              
-
-
+            return "HEY!";
         }
     }
 }
