@@ -28,15 +28,15 @@ namespace ChallengesWithTestsMark8
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            if (number1 <= number2)
-            {
-                return number1;
-            }
-            else 
-            {
-                return number2;
-            }
-            
+            //if (number1 < number2)
+            //{
+            //    return number1;
+            //}
+            //else
+            //{
+            //    return number2;
+            //}
+            return (number1 < number2) ? number1 : number2;
         }
 
         public long Multiply(long factor1, long factor2)
